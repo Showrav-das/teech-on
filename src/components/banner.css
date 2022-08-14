@@ -1,0 +1,105 @@
+
+.img-tag{
+    background-image: url('../images/billboard-desktop-v4.jpg');
+    object-fit: cover;
+    /*width: 1380px;*/
+    width: 100%;
+    /*height: 600px;*/
+    height: 100vh;
+    /*height: 100%;*/
+    /*box-sizing: border-box;*/
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+  background-size: cover;
+    padding-right: 300px;
+   
+}
+
+.text{
+    text-align: left;
+}
+
+.aa{
+  background-image: url('../images/support-1-v3.jpg');
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  box-sizing: border-box;
+  /*float: left;*/
+  object-fit: cover;
+background-position: 0 0; 
+
+  /*position: absolute;*/
+}
+
+
+.btn-begin:hover{
+  color: gray;
+}
+
+/* create1 */
+
+.create1 div{
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  margin-left: 20px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+ .selected{
+  border: 4px solid black !important;
+}
+.header-height{
+  height: 80px;
+}
+
+.btn-disable{
+  cursor: not-allowed;
+  background-color: gray;
+  color: white;
+}
+
+/* create 4 */
+.radio-div{
+  border: 1px solid black;
+  width: 40%;
+  margin: 0 auto;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+
+/* intended */
+
+.intend-div{
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.intended-ul ul li{
+  list-style: none;
+  text-align: left;
+  padding: 0px 5px;
+}
+
+
+.intended-ul ul li button,.response-btn{
+  padding: 0px 10px;
+ background-color: white;
+ border: none;
+ font-weight: 600;
+ margin-top: 10px;
+ margin-bottom: 20px;
+}
+.intended-ul ul li button:hover{
+  background-color: rgb(217, 232, 248);
+}
+
+.response-btn{
+  color: blueviolet;
+}

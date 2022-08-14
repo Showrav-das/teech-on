@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name":"Phython",
+        "price":"$89",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2GEuLtKEqeLZanQmEE2b1-rKvPiYTZCvtQ&usqp=CAU"
+    },
+    {
+        "id":2,
+        "name":"C",
+        "price":"$36",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ooLA59TQ107iyOYmkwUzVZJKRisuExlTGQ&usqp=CAU"
+    },
+    {
+        "id":3,
+        "name":"C#",
+        "price":"$36",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQeEqaFMhsPaC22dnRe9tkjPg1jmk_Lt_LQ&usqp=CAU"
+    },
+    {
+        "id":4,
+        "name":"C++",
+        "price":"$89",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQeEqaFMhsPaC22dnRe9tkjPg1jmk_Lt_LQ&usqp=CAU"
+    },
+    {
+        "id":5,
+        "name":"Web Developement",
+        "price":"$36",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5z__pPmgqwMrXds3ptRT5lAjp9p_TLqSsA&usqp=CAU"
+    },
+    {
+        "id":6,
+        "name":"PHP",
+        "price":"$189",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQeEqaFMhsPaC22dnRe9tkjPg1jmk_Lt_LQ&usqp=CAU"
+    }
+]

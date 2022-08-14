@@ -1,0 +1,21 @@
+.stunoti:hover{
+background-color: rgb(200, 239, 226);
+}
+
+.accordion ul li{
+    list-style: none;
+}
+.video-btn button{
+    background-color: white;
+    color: gray;
+    border: none;
+    font-weight: 900;
+}
+
+.video-btn button:hover{
+    color: black;
+    transition: 0.8s;
+}
+.overview p{
+    line-height: 10px;
+}
