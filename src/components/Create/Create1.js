@@ -51,6 +51,7 @@ const Create1 = () => {
                     {
                         check ===false && check2===false ?<button className='float-end ps-4 pe-4 pt-2 pb-2 border border-0 fw-bold btn-disable' disabled>Continue</button> : <button className='float-end bg-dark text-white ps-4 pe-4 pt-2 pb-2 border border-0 fw-bold'>Continue</button>
                     }
+
                 </Link>
             </div>
         </div>

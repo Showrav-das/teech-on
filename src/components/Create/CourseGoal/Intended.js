@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import img from '../../../images/landing.jpg';
 import React, { useState, useRef } from 'react';
 import JoditEditor from "jodit-react";
+import CourseStructure from './CourseStructure';
+import Setup from './Setup';
+import Film from './Film';
+import Curriculum from './Curriculum';
+import Captions from './Captions';
 
 const Intended = () => {
     const config = {
@@ -15,20 +20,81 @@ const Intended = () => {
     const [landing, setLanding] = useState(false);
     const [message, setMessage] = useState(false);
     const [promotion, setPromotion] = useState(false);
+    const [captions, setCaptions] = useState(false);
+    const [structure, setStructure] = useState(false);
+    const [film, setFilm] = useState(false);
+    const [setup, setSetup] = useState(false);
+    const [curiculum, setCuriculum] = useState(false);
     const [input, setInput] = useState(0);
     const [input2, setInput2] = useState(0);
     const [input3, setInput3] = useState(0);
     const [change, setChange] = useState(160);
     const [change2, setChange2] = useState(160);
 
+    const structureHandle = () => {
+        setLanding(false);
+        setMessage(false);
+        setSetup(false);
+        setStructure(false);
+        setInten(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
+        setStructure(true);
+    }
+    const setupeHandle = () => {
+        setLanding(false);
+        setMessage(false);
+        setSetup(false);
+        setStructure(false);
+        setInten(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
+        setSetup(true);
+    }
     const intended = () => {
         setLanding(false);
         setMessage(false);
+        setSetup(false);
+        setStructure(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
+        setFilm(false);
         setInten(true);
     }
-    const landingPage = () => {
-        setInten(false);
+    const filmHandle = () => {
+        setLanding(false);
         setMessage(false);
+        setSetup(false);
+        setStructure(false);
+        setInten(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
+        setFilm(true);
+    }
+    const curriculumHandle = () => {
+        setLanding(false);
+        setMessage(false);
+        setSetup(false);
+        setStructure(false);
+        setInten(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
+        setCuriculum(true);
+    }
+    const landingPage = () => {
+        setLanding(false);
+        setMessage(false);
+        setSetup(false);
+        setStructure(false);
+        setInten(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
         setLanding(true);
     }
 
@@ -70,13 +136,35 @@ const Intended = () => {
     }
     const messageHandle = () => {
         setLanding(false);
+        setMessage(false);
+        setSetup(false);
+        setStructure(false);
         setInten(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
         setMessage(true);
+    }
+    const captionHandle = () => {
+        setLanding(false);
+        setMessage(false);
+        setSetup(false);
+        setStructure(false);
+        setInten(false);
+        setPromotion(false);
+        setFilm(false);
+        setCuriculum(false);
+        setCaptions(true);
     }
     const promotionHandle = () => {
         setLanding(false);
         setMessage(false);
+        setSetup(false);
+        setStructure(false);
         setInten(false);
+        setPromotion(false);
+        setCuriculum(false);
+        setCaptions(false);
         setPromotion(true);
     }
     return (
@@ -84,10 +172,24 @@ const Intended = () => {
             <div className='row mt-5'>
                 <div className='col-lg-3 intended-ul'>
                     <ul>
+                        <li className='fw-bold'>Plan Your Course</li>
                         <li>
                             <button onClick={intended}>Intended learners</button>
                         </li>
+                        <li>
+                            <button onClick={structureHandle}>Course structure</button>
+                        </li>
+                        
+                        <li>
+                            <button onClick={setupeHandle}>Setup & test video</button>
+                        </li>
+                        <li className='fw-bold'>Create your content</li>
+                        <li> <button onClick={filmHandle}>Film & edit</button></li>
+                        <li> <button onClick={curriculumHandle}>Curriculum</button></li>
+                        <li> <button onClick={captionHandle}>Captions</button></li>
                         <li> <button>Practice tests</button></li>
+                        <li className='fw-bold'>Publish your course</li>
+
                         <li> <button onClick={landingPage}>Course landing page</button></li>
                         <li> <button>Pricing</button></li>
                         <li> <button onClick={promotionHandle}>Promotions</button></li>
@@ -97,6 +199,18 @@ const Intended = () => {
                 </div>
                 <div className="col-lg-9">
                     <div className='shadow-lg text-start ps-4 mb-5'>
+                        {
+                            structure && <CourseStructure/>
+                        }
+                        {
+                            setup && <Setup/>
+                        }
+                        {
+                            film && <Film/>
+                        }
+                        {
+                            captions && <Captions/>
+                        }
                         {
                             inten && <div>
                                 <h2 className='text-start'>Intended learners</h2>
@@ -242,6 +356,9 @@ const Intended = () => {
                                     </div>
                                 </div>
                             </div>
+                        }
+                        {
+                            curiculum && <Curriculum/>
                         }
                         {
                             message && <div>
